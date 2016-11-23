@@ -72,7 +72,7 @@ $Comp_Dns = $computer.DnsHostName
 			[string] $start_of_range_value = $start_of_range_arr[0]
 			$start_of_range_int32 = ip_to_int32 $start_of_range_value
 
-			$end_of_range_value = Find-CidrRange $ip_info
+			$end_of_range_value = find-ipcidr $ip_info
 			$end_of_range_int32 = ip_to_int32 $end_of_range_value
 			
 			$search_ip_int32 = ip_to_int32 $Comp_IP
